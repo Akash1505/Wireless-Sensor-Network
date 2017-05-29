@@ -1,0 +1,4 @@
+$gawk -f energy.awk "yourtracefile.tr" > node0.dat
+gnuplot
+plot 'pie.dat'/load 'pie.gnu'
+plot 'pie.dat' with linespoint
